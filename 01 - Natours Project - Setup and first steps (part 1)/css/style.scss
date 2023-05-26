@@ -42,7 +42,7 @@ $shadow-20: 0 1.5rem 4rem (rgba($color-black, 0.2));
   margin-bottom: 1.5rem;
 }
 
-.u-margin-top-huge{
+.u-margin-top-huge {
   margin-top: 10rem;
 }
 
@@ -353,7 +353,7 @@ $shadow-20: 0 1.5rem 4rem (rgba($color-black, 0.2));
   // btn--green
   &--green {
     background-color: $color-primary;
-    color: $color-white ;
+    color: $color-white;
 
     &::after {
       background-color: $color-primary;
@@ -402,6 +402,36 @@ $shadow-20: 0 1.5rem 4rem (rgba($color-black, 0.2));
   &:active {
     box-sizing: 0 0.5rem 1rem rgba($color-black, 0.15);
     transform: translateY(0);
+  }
+}
+
+// _story
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+  background-color: $color-white;
+  border-radius: 3px;
+  padding: 6rem;
+  font-size: $default-font-size;
+  transform: skewX(-12deg);
+
+  &__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+
+    transform: translateX(-3rem) skew(12deg);
+  }
+
+  &__img{
+    height: 100%;
+  }
+
+  &__text{
+    transform: skewX(12deg);
   }
 }
 
@@ -616,3 +646,10 @@ body {
   margin-top: -11.5rem;
 }
 // END TOURS SECTION
+
+// SECTION STORIES
+.section-stories {
+  padding: 15rem 0;
+  background-color: $color-grey-light-1;
+}
+// END SECTION STORIES
